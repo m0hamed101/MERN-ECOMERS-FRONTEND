@@ -1,19 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-// // img
-import applestoreimg from '../../Assets/New folder/app-store.jpg'
-import googleplayimg from '../../Assets/New folder/google-play.jpg'
-import paymentmethodimg from '../../Assets/New folder/payment-method.png'
-
-// // icons
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import YouTubeIcon from '@mui/icons-material/YouTube';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import PinterestIcon from '@mui/icons-material/Instagram';
-
-
-
 export const Footer = () => {
     return (
         <div className="container" style={{ marginBottom: '70px' }}>
@@ -67,10 +53,12 @@ export const Footer = () => {
                             <div className="col-lg-2" style={{ textAlign: 'center' }}>
                                 <h5>App</h5>
                                 <div className="">
-                                    <img src={applestoreimg} alt="" />
-                                    <img src={googleplayimg} alt="" />
+                                {
+                                    // <img src={applestoreimg} alt="" />
+                                    // <img src={googleplayimg} alt="" />
+                                    // <img src={paymentmethodimg} alt="" />
+                                }
                                 </div>
-                                <img src={paymentmethodimg} alt="" />
                             </div>
                         </div>
                         {/* Grid row */}
