@@ -1,0 +1,14 @@
+.free_Shipping_contaner {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.home_contaner {
+    margin: 0px 90px 0px 90px;
+
+}
+
+
+/* Featured */

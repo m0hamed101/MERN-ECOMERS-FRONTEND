@@ -1,0 +1,173 @@
+.register_contaner {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #F8F8F8;
+
+}
+
+.sigupinput {
+  height: 100%;
+}
+
+.inputGrop {
+  display: grid;
+}
+
+.register_maindiv {
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  box-shadow: rgba(121, 120, 120, 0.1) 0px 5px 15px;
+  background-color: rgb(255, 255, 255);
+  width: 900px;
+  height: 600px;
+}
+
+.sigupdivimg {
+  display: grid;
+}
+
+form {
+  height: 50vh;
+  width: 100%;
+}
+
+
+form label {
+  margin: 15px;
+  width: 100%;
+  font-weight: bold;
+}
+
+form input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin: 25px;
+  width: 30%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login .error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* form.css 
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .signup div {
+    margin-bottom: 10px;
+  }
+  
+  .signup label {
+    font-weight: bold;
+  }
+  
+  .signup input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .formcontaner{
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .signup .error {
+    color: red;
+    margin-top: 10px;
+  }
+  */
+
+/* login form  
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .login label {
+    font-weight: bold;
+  }
+  
+  .login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  */

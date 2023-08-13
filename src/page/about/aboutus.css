@@ -1,0 +1,43 @@
+.aboutuscontaner {
+    margin: 0px 90px;
+}
+
+.aboutus_contaner_firest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ourcompany {
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 15px;
+}
+
+.ourcompany_img img {
+    padding: 20px;
+    width: 100%;
+}
+
+.aboutuscard img {
+    border-radius: 25px;
+    padding: 15px;
+    height: 80%;
+    width: 100%;
+}
+
+.aboutuscard {
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 260px;
+    height: 350px;
+}
+
+@media only screen and (max-width:900px) {
+    .aboutus_contaner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

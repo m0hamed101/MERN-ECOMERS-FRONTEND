@@ -1,0 +1,26 @@
+.cart_img_title {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+button {
+    padding: 5px;
+    border-radius: 15px;
+    margin: 2px 0px 0px 5px;
+}
+
+.cartlinkitem {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cartitemdlele {
+    width: 150px;
+    height: 100px;
+}
+
+.CartItemContaner {
+    justify-content: center;
+    align-items: center;
+}

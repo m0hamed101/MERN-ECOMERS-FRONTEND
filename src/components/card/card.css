@@ -1,0 +1,63 @@
+.card {
+    border-radius: 30px;
+    display: flex;
+    align-items: start;
+}
+.small {
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(0, 225, 255);
+    border-radius: 15px;
+    position: absolute;
+    margin: 15px;
+}
+
+.card_img {
+    padding: 15px;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.cardimg div::before {
+    display: flex;
+
+}
+
+.cardicons div {
+    background-color: #00E1FF;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 100%;
+    color: rgb(7, 111, 247);
+    display: none;
+}
+
+.cardicons {
+    position: absolute;
+    display: flex;
+}
+
+.cardimg {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_detels {
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+    align-items: center;
+    width: 80%;
+
+}
+
+.card_title {
+
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+}

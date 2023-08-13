@@ -1,0 +1,49 @@
+.offer {
+    height:150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.offerimg1,
+.offerimg2,
+.offerimg3 {
+
+    padding: 5px;
+    margin: 5px;
+    background-size: cover;
+}
+
+.offerimg1 h4 {
+    width: 50%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.offerimg2 h4 {
+    width: 50%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.offerimg3 h4 {
+    width: 50%;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .offer {
+        height: 300px;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .offer {
+        height: 300px;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+}

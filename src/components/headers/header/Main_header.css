@@ -1,0 +1,44 @@
+.head_ul_contaner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+#inputfullview {
+    display: none;
+}
+
+.head_phone_icon {
+    display: none;
+}
+
+.fullveiwlogin {
+    display: none;
+}
+.GridViewRoundedIcon{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:900px) {
+    .head_ul_contaner {
+        display: block;
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .head_phone_icon {
+        display: block;
+    }
+
+    #inputfullview,.socal {
+        display:flex;
+    }
+    .fullveiwlogin{
+        display: block;
+    }
+
+}

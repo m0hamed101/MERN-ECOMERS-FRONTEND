@@ -1,0 +1,43 @@
+.logo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding-top: 15px;
+
+}
+
+.logoimg {
+    margin-top: -10px;
+    margin-right: -80px;
+    width: 50%;
+}
+
+.searchbar div {
+    margin-left: 15px;
+}
+
+.headcart {
+    width: 20%;
+}
+
+.search_header_contaner {
+    display: flex;
+
+}
+
+@media only screen and (max-width:900px) {
+
+    .search_header_contaner {
+        display: none;
+
+    }
+
+
+}
