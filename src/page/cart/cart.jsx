@@ -49,7 +49,7 @@ export const Cart = () => {
   const deleteReload = (_id) => {
     deleProduct(_id);
     cartreload();
-    window.location.reload(true);
+    // window.location.reload(true);
 
   };
 
