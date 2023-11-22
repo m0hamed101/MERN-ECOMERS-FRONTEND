@@ -18,16 +18,12 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 
 import Badge from '@mui/material/Badge';
 import { useAuthContext } from '../../../page/auth/form/formhook/useAuthContext';
+import { useLogout } from '../../../page/auth/form/formhook/useLogout';
 // import { Cartcontext } from '../../../App';
 import { useSelector } from 'react-redux';
 
 export const Main_header = () => {
-
    const carrt = useSelector((state) => state.cart.items);
-
-
-
-
    const [scroll, setScroll] = useState(false);
    useEffect(() => {
       window.addEventListener("scroll", () => {
@@ -35,8 +31,12 @@ export const Main_header = () => {
       });
    }, []);
 
-
-
+   // login proccess
+   const handleClick = () => {
+      logout()
+   }
+   const { logout } = useLogout()
+   const { user } = useAuthContext()
    return (
       <Navbar expand="lg" className={scroll ? " bg-body-tertiary w-100% fixed-top" : " bg-body-tertiary w-100%"}>
 
@@ -53,10 +53,6 @@ export const Main_header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="me-auto w-100">
-
-
-
-
                   <div id='inputfullview' className=" input-group m-3">
                      <div className="input-group-prepend">
                         <button className="btn btn-outline-secondary" type="button">Button</button>
@@ -89,20 +85,40 @@ export const Main_header = () => {
                      <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>contact</Link></Nav.Link>
                      <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>Hotline <span className="hotline">1900-888</span></Link></Nav.Link>
                      <div className="fullveiwlogin">
-                        <Nav.Link>
-                           <Link style={{ textDecoration: 'none' }} to={'/login'}>Login/SignUp</Link>
-                           <Link style={{ textDecoration: 'none' }} to={'/register'}>SignUp</Link>
-                        </Nav.Link>
+                        {// <Nav.Link>
+                        //    <Link style={{ textDecoration: 'none' }} to={'/login'}>Login</Link>
+                        //    <hr />
+                        //    <Link style={{ textDecoration: 'none' }} to={'/register'}>SignUp</Link>
+                        // </Nav.Link>
+                     }
+                        
                         <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>(+01)-2345-6789</Link></Nav.Link>
                         <h3 className='socal'>Follow Us</h3>
-                        <div className="socal w-100">
-                           <Nav.Link className='pr-3'><FacebookIcon /></Nav.Link>
-                           <Nav.Link className='pr-3'><TwitterIcon /></Nav.Link>
-                           <Nav.Link className='pr-3'><InstagramIcon /></Nav.Link>
-                           <Nav.Link className='pr-3'><PinterestIcon /></Nav.Link>
-                           <Nav.Link className='pr-3'><YouTubeIcon /></Nav.Link>
+                        <div className="socal w-100 mb-3">
+                           <Nav.Link><FacebookIcon /></Nav.Link>
+                           <Nav.Link><TwitterIcon /></Nav.Link>
+                           <Nav.Link><InstagramIcon /></Nav.Link>
+                           <Nav.Link><PinterestIcon /></Nav.Link>
+                           <Nav.Link><YouTubeIcon /></Nav.Link>
                         </div>
+                        <nav>
+                           {user && (
+                              <div id='btnheader' style={{ width: "130%" }}  >
+                              <Link style={{ textDecoration: "none", border: "1px solid", padding: "3px", borderRadius: "5px" }} id='btnheader' to="/login" onClick={handleClick}>LOG OUT</Link>
+                              <span style={{ margin: "15px" }}>{user.user.email}</span>
+
+                              </div>
+                           )}
+                           {!user && (
+                              <div id='btnheader' >
+                                 <Link id='btnheader' to="/login">Login</Link>
+                                 <Link id='btnheader' to="/register">Signup</Link>
+
+                              </div>
+                           )}
+                        </nav>
                      </div>
+                     
                   </div>
                </Nav>
             </Navbar.Collapse>

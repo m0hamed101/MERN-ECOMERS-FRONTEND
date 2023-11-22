@@ -50,16 +50,16 @@ export const Footer = () => {
                             {/* Grid column */}
 
                             {/* Grid column */}
-                            <div className="col-lg-2" style={{ textAlign: 'center' }}>
-                                <h5>App</h5>
-                                <div className="">
-                                {
+                            {
+                            // <div className="col-lg-2" style={{ textAlign: 'center' }}>
+                                // <h5>App</h5>
+                                // <div className="">
                                     // <img src={applestoreimg} alt="" />
                                     // <img src={googleplayimg} alt="" />
                                     // <img src={paymentmethodimg} alt="" />
+                                    // </div>
+                                    // </div>
                                 }
-                                </div>
-                            </div>
                         </div>
                         {/* Grid row */}
                     </section>

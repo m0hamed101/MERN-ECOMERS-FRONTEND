@@ -36,7 +36,7 @@ export const Product = () => {
             <Header />
             <nav>
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link style={{ textDecoration: 'none' }} to={'./home'}>home</Link></li>
+                    <li className="breadcrumb-item"><Link style={{ textDecoration: 'none' }} to={'/'}>home</Link></li>
                     <li className="breadcrumb-item " aria-current="page"><Link to={'/shop'}><h8 className='intopage'>shop</h8></Link></li>
                     <li className="breadcrumb-item " aria-current="page">{item[0].title}</li>
                 </ol>

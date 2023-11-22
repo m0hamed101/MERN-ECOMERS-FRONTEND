@@ -10,7 +10,7 @@ import feature6 from '../../Assets/feature/feature-6.png'
 
 export const Free_shoping = () => {
     return (
-<div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+<div>
         <div className='free_Shipping_contaner'>
             <div className="free_Shipping">
                 <img src={feature1} alt="" />

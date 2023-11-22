@@ -13,7 +13,7 @@ export const Contact = () => {
                     <h7>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</h7>
                     <img src={undraw_contact} alt="" />
                 </div>
-                <div className='w-100'>
+                <div>
                     <input type="text" placeholder='Your name' />
                     <input type="text" placeholder='Email' />
                     <input type="text" placeholder='Subject' />

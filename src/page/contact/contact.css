@@ -1,9 +1,10 @@
 .contact_contaner {
-    margin: 0px 70px;
-    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));}
 
 .contact_contaner input,
 textarea {
@@ -30,7 +31,8 @@ textarea {
 .talk_about img {
     padding-top: 30px;
     padding: 25px;
-    height: 50%;
+    height: 280px;
+    width:100%;
 }
 
 .talk_about {
