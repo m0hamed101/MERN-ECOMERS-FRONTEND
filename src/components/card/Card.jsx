@@ -42,13 +42,7 @@ export const Card = ({ product }) => {
       progress: undefined,
       theme: "light",
     });
-
   }
-
-
-
-
-
   const config = {
     headers: { authorization: `Bearer ${token}` }
   };
@@ -57,11 +51,6 @@ export const Card = ({ product }) => {
     itemId: `${item}`,
     quantity: 1
   };
-
-
-
-
-
 
   const cartIcon = () => {
     handleCart(token, item, userid);
@@ -74,7 +63,6 @@ export const Card = ({ product }) => {
       bodyParameters,
       config
     ).then()
-
   }
 
   return (
@@ -85,8 +73,8 @@ export const Card = ({ product }) => {
       </Link>
 
       <div className='card_title'>
-        <div>{product.category}</div>
-        <small >{product.title}</small>
+        <h6>{product.category}</h6>
+        <small>{product.title}</small>
 
         <div className='card_detels'>
 
