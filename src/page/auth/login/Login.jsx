@@ -21,10 +21,18 @@ export const Login = () => {
   return (
     <div className='register_contaner'>
       <div className="register_maindiv">
+      <div className="sigupdivimg">
+          <img src={Loginimg} alt="" />
+          <Link style={{ fontSize: '20px', textDecoration: 'none', margin: '40px' }} to={'/register'}>Create an account</Link>
+        </div>
 
         <div>
           <form className="login" onSubmit={handleSubmit}>
             <h3>Log In</h3>
+            <div style={{border:'solid 1px',borderRadius:"25px",padding:"5px 50px",width:"fit-content"}}>
+            <h6> test Email : account@account.com</h6>
+            <h6>test Password : account@account.com</h6>
+            </div>
 
             <label>Email address:</label>
             <input
@@ -44,10 +52,7 @@ export const Login = () => {
           </form>
         </div>
 
-        <div className="sigupdivimg">
-          <img src={Loginimg} alt="" />
-          <Link style={{ fontSize: '20px', textDecoration: 'none', margin: '40px' }} to={'/register'}>Create an account</Link>
-        </div>
+        
       </div>
 
 

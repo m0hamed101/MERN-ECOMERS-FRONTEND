@@ -18,10 +18,11 @@ export const Register = () => {
 
   return (
     <div className='register_contaner'>
-
       <div className="register_maindiv">
-
-
+      <div className="sigupdivimg">
+          <img src={registerimg} alt="" />
+          <Link style={{ fontSize: '20px', textDecoration: 'none', margin: '40px' }} to={'/login'}>I am already member</Link>
+        </div>
         <div>
           <form className="signup" onSubmit={handleSubmit}>
             <h3>Sign Up</h3>
@@ -47,12 +48,6 @@ export const Register = () => {
             {error && <div style={{color:'red'}} className="error">error</div>}
           </form>
         </div>
-
-        <div className="sigupdivimg">
-          <img src={registerimg} alt="" />
-          <Link style={{ fontSize: '20px', textDecoration: 'none', margin: '40px' }} to={'/login'}>I am already member</Link>
-        </div>
-
       </div>
     </div>
   )

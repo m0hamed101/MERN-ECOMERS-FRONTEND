@@ -1,6 +1,6 @@
 .register_contaner {
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   background-color: #F8F8F8;
@@ -71,6 +71,24 @@ form button:disabled {
   color: red;
   margin-top: 10px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  
+  .register_maindiv {
+    border-radius: 25px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    box-shadow: rgba(121, 120, 120, 0.1) 0px 5px 15px;
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    height: 600px;
+  }
+  .register_contaner {
+  }
+  }
 
 /* form.css 
 
