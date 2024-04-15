@@ -7,22 +7,12 @@ import { Footer } from '../../components/Footer/Footer'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchproducts } from '../../Redux/Slice'
 export const Shop = () => {
-
-
-
-
   const product = useSelector((state) => state.products);
 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchproducts())
   }, [])
-
-
-
-
-
-
   const [minPrice, setMinPrice] = useState(100);
   const [maxPrice, setMaxPrice] = useState(250);
   const validateRange = (minPrice, maxPrice) => {
@@ -30,7 +20,6 @@ export const Shop = () => {
       // Swap the values
       [minPrice, maxPrice] = [maxPrice, minPrice];
     }
-
     return { minPrice, maxPrice };
   };
   const handleMinPriceChange = (e) => {
@@ -45,7 +34,6 @@ export const Shop = () => {
     setMinPrice(validatedMinPrice);
     setMaxPrice(validatedMaxPrice);
   };
-
   return (
     <div className='shop_page_contander'>
       <Header />

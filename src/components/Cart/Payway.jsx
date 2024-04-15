@@ -1,17 +1,7 @@
 import React from 'react'
-// import { useDispatch, useSelector } from 'react-redux';
 
 
 export const Payway = ({carrt}) => {
-    // const dispatch = useDispatch();
-    // const cart = useSelector(state => state.cart);
-    // const totalprice = cart.reduce((acc, product) => {
-    //     acc += product.price[0] * product.quantity;
-    //     console.log(acc);
-    //     return acc;
-    // }, 0)
-
-
     return (
 
         <div className="card bg-primary text-white rounded-3">

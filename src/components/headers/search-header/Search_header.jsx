@@ -1,7 +1,4 @@
 import React, { useEffect, useState,useContext } from 'react'
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Search_header.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -63,5 +60,3 @@ const carrt =useSelector((state)=>state.cart.items);
         </div>
     )
 }
-
-        // <Link to={'./cart'}><ShoppingBagOutlinedIcon className='m-4' /></Link>

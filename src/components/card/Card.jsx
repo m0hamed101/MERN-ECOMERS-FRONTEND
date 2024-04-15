@@ -96,7 +96,6 @@ export const Card = ({ product }) => {
             pauseOnHover
             theme="light"
           />
-          {/* Same as */}
           <ToastContainer />
 
 

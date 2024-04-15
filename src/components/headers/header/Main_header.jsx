@@ -19,7 +19,6 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import Badge from '@mui/material/Badge';
 import { useAuthContext } from '../../../page/auth/form/formhook/useAuthContext';
 import { useLogout } from '../../../page/auth/form/formhook/useLogout';
-// import { Cartcontext } from '../../../App';
 import { useSelector } from 'react-redux';
 
 export const Main_header = () => {
@@ -85,12 +84,6 @@ export const Main_header = () => {
                      <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>contact</Link></Nav.Link>
                      <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>Hotline <span className="hotline">1900-888</span></Link></Nav.Link>
                      <div className="fullveiwlogin">
-                        {// <Nav.Link>
-                        //    <Link style={{ textDecoration: 'none' }} to={'/login'}>Login</Link>
-                        //    <hr />
-                        //    <Link style={{ textDecoration: 'none' }} to={'/register'}>SignUp</Link>
-                        // </Nav.Link>
-                     }
                         
                         <Nav.Link><Link style={{ textDecoration: 'none' }} to={'/contact'}>(+01)-2345-6789</Link></Nav.Link>
                         <h3 className='socal'>Follow Us</h3>

@@ -1,15 +1,11 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import './Popular_Categories.css';
-
-// import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
 import { Pop_categ_card } from './pop_categ_card/pop_categ_card';
 

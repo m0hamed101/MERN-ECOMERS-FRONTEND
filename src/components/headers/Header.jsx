@@ -5,11 +5,6 @@ import { Main_header } from './header/Main_header'
 
 
 export const Header = () => {
-    
-
-   
-
-
     return (
         <div>
             <Top_header  />

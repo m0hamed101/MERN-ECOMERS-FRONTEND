@@ -1,12 +1,9 @@
 import React from 'react'
-import './product.css'
 import { Header } from '../../components/headers/Header'
 import { Footer } from '../../components/Footer/Footer'
 import { Link, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-
-
 export const Product = () => {
     const location = useLocation();
     const id = location.pathname;
@@ -17,8 +14,6 @@ export const Product = () => {
     useEffect(() => {
         getProduct();
     }, []);
-
-
     const getProduct = () => {
         axios.get(api)
             .then((response) => {
@@ -28,9 +23,6 @@ export const Product = () => {
                 console.error(error);
             });
     };
-
-
-
     return (
         <div className='product_contaner'>
             <Header />
@@ -41,15 +33,9 @@ export const Product = () => {
                     <li className="breadcrumb-item " aria-current="page">{item[0].title}</li>
                 </ol>
             </nav>
-
-
-
             <div className="home-section">
-
-
                 <section className="padding-y">
                     <div className="container">
-
                         <div className="row">
                             <aside className="col-lg-6">
                                 <article className="gallery-wrap">
@@ -112,63 +98,27 @@ export const Product = () => {
                                         <dt className="col-3">Brand</dt>
                                         <dd className="col-9">Reebook </dd>
                                     </dl>
-
-
-
                                     <div className="row mb-4">
                                         <div className="col-md-4 col-6 mb-2">
                                             <label className="form-label">Size</label>
                                             <select className="form-select">
                                                 <option>Medium</option>
-                                                {
-                                                    // <option>Small</option>
-                                                    // <option>Large</option>
-                                                }
                                             </select>
                                         </div>
-                                        {
-                                            //<div className="col-md-4 col-6 mb-3">
-                                            //<label className="form-label d-block">Quantity</label>
-                                            //<div className="input-group input-spinner">
-                                            //                                                 <button className="btn btn-icon btn-light" type="button">
-                                            //                                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
-                                            //                                                         <path d="M19 13H5v-2h14v2z"></path>
-                                            //                                                     </svg>
-                                            //                                                 </button>
-                                            //                                                 <input className="form-control text-center" placeholder="" value="14" />
-                                            //                                                 <button className="btn btn-icon btn-light" type="button">
-                                            //                                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
-                                            //                                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
-                                            //                                                     </svg>
-                                            //                                                 </button>
-                                            //</div>
-                                            //</div>
-                                        }
                                     </div>
-
                                     <a href="#" className="m-2 btn  btn-warning"> Buy now </a>
-
                                     <div>
                                         <a href="#" className="m-2 btn  btn-primary">
                                             <i className="me-1 fa fa-shopping-basket"></i> Add to cart </a>
                                         <a href="#" className="m-2 btn  btn-light"> <i className="me-1 fa fa-heart"></i> Save </a>
                                     </div>
-
                                 </article>
                                 <br />
                             </main>
                         </div>
-
                     </div>
                 </section>
-
             </div>
-
-
-
-
-
-
             <Footer />
         </div>
     )

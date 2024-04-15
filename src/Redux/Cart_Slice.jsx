@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-// import { useAuthContext } from "../page/auth/form/formhook/useAuthContext";
 
 export const fetchcart = createAsyncThunk("cartSlice/fetchcart", async (tokken) => {
     const res = await fetch("https://ecomersbackendapi.onrender.com/cart", {

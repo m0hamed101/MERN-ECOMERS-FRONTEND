@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../cart/cart.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Cart_component } from '../../components/Cart/Cart_component';
 import { Payway } from '../../components/Cart/Payway';
 import { Header } from "../../components/headers/Header"
@@ -15,7 +13,6 @@ import { loding } from '../../Redux/Cart_Slice';
 
 
 export const Cart = () => {
-  // const [loding, setloding] = useState(false);
 
   const { user } = useAuthContext();
   const dispatchcart = useDispatch();
@@ -37,7 +34,7 @@ export const Cart = () => {
   const deleProduct = async (_id) => {
     try {
       const config = {
-        headers: { authorization: `Bearer ${user.token}` }, // Make sure the 'A' in 'Authorization' is capitalized
+        headers: { authorization: `Bearer ${user.token}` },
       };
       const response = await axios.delete('https://ecomersbackendapi.onrender.com/cart?itemId=' + _id, config);
       setProduct(response.data);
@@ -49,13 +46,7 @@ export const Cart = () => {
   const deleteReload = (_id) => {
     deleProduct(_id);
     cartreload();
-    // window.location.reload(true);
-
   };
-
-
-
-  // console.log(carrt);
   return (
     <div>
       <Header />
@@ -88,8 +79,6 @@ export const Cart = () => {
                   </div>
                 </div>
             }
-
-
           </div>
           <div className="col-lg-5">
             <Payway carrt={carrt} />
